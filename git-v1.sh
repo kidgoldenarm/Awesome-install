@@ -1,31 +1,16 @@
 #!/bin/bash
 #set -e
-##################################################################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
-# Website	:	https://www.arcolinuxforum.com
-##################################################################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
-##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
+echo "Checki for new files"
 git pull
 
 # Below command will backup everything inside the project folder
 git add --all .
 
 # Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+echo "*************************************"
+echo "comment on your commit"
+echo "*************************************"
 
 read input
 
@@ -38,6 +23,6 @@ git commit -m "$input"
 git push -u origin master
 
 
-echo "################################################################"
-echo "###################    Git Push Done      ######################"
-echo "################################################################"
+echo "*******************"
+echo "*** Git Pushed! ***"
+echo "*******************"
