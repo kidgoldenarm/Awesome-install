@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -e
 
-echo "Checki for new files"
+echo "Checking for new files"
 git pull
 
 # Below command will backup everything inside the project folder
